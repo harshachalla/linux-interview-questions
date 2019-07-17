@@ -28,7 +28,7 @@
 * They can even make it run better and then redistribute these enhanced source code freely again.
 * This eventually benefits everyone in the community.
 
-**10) What is the basic difference between BASH and DOS?**
+**8) What is the basic difference between BASH and DOS?**
 
 The key differences between the BASH and DOS console lie in 3 areas:
 
@@ -39,24 +39,24 @@ The key differences between the BASH and DOS console lie in 3 areas:
 * Under DOS, / serves as a command argument delimiter and \ is the directory separator
 
 
-**12) Describe the root account.**
+**9) Describe the root account.**
 
 * The root account is like a systems administrator account and allows you full control of the system.
 * Here you can create and maintain user accounts, assigning different permissions for each account.
 * It is the default account every time you install Linux.
 
-**13) What is CLI?**
+**10) What is CLI?**
 
 * CLI is short for Command Line Interface.
 * This interface allows the user to type declarative commands to instruct the computer to perform operations.
 * CLI offers greater flexibility.
 
-**15) How do you open a command prompt when issuing a command?**
+**11) How do you open a command prompt when issuing a command?**
 
 * To open the default shell (which is where the command prompt can be found), press **Ctrl-Alt-F1**.
 * This will provide a command line interface (CLI) from which you can run commands as needed.
 
-**16) How can you find out how much memory Linux is using?**
+**12) How can you find out how much memory Linux is using?**
 
 * From a command shell, use the **"concatenate"** command: **cat /proc/meminfo** for memory usage information. 
 * You should see a line starting something like Mem: 64655360, etc.
@@ -70,5 +70,47 @@ vmstat
 
 top
 
-htop```
+htop
+```
+
 to find current memory usage
+
+
+**13) What is the maximum length for a filename under Linux?**
+
+* Any filename can have a maximum of 255 characters.
+* This limit does not include the path name, so therefore the entire pathname and filename could well exceed 255 characters.
+
+**14) What is the pwd command?**
+
+* to find **present work directory**
+
+**15) What are environmental variables?**
+
+* Environmental variables are global settings that control the shell's function as well as that of other Linux programs.
+* Another common term for environmental variables is global shell variables.
+
+**16) What are the different modes when using vi editor?**
+
+* There are 3 modes under vi:- Command mode – this is the mode where you start in
+* - Edit mode – this is the mode that allows you to do text editing
+* - Ex mode – this is the mode wherein you interact with vi with instructions to process a file
+
+
+**17) What is grep command?**
+
+* grep a search command that makes use of pattern-based searching.
+* It makes use of options and parameters that are specified along with the command line and applies this pattern in searching the required file output.
+
+**18) What are the contents of /usr/local?**
+
+* It contains locally installed files.
+* This directory matters in environments where files are stored on the network.
+* Specifically, locally-installed files go to /usr/local/bin, /usr/local/lib, etc.). Another application of this directory is that it is used for software packages installed from source, or software not officially shipped with the distribution.
+
+
+**43) How do you terminate an ongoing process?**
+
+* Every process in the system is identified by a unique process id or pid.
+* Use the kill command followed by the pid to terminate that process.
+* To terminate all process at once, use kill 0.
