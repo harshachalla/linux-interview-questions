@@ -64,11 +64,11 @@ The key differences between the BASH and DOS console lie in 3 areas:
 
 * You can also use commands
 
-``free - m
+```free - m
 
 vmstat
 
 top
 
-htop``
+htop```
 to find current memory usage
