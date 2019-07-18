@@ -189,3 +189,38 @@ less filename.txt
 ```
 #sudo sh-c 'echo "greater-show-manual-login=true" >>/etc/lightdm/lightdm.conf'
 ```
+
+**31) Explain how to uninstall the libraries in Linux?**
+
+* To uninstall the libraries in Linux, you can use command 
+```
+sudo apt-get remove library_name
+```
+
+**32) What is tail command in Linux ?**
+
+* tail command displays the last part of a file. Generally, users don’t need every log line to troubleshoot. Instead, you want to check what your logs say about the most recent request to your application.
+
+tail Example:
+```
+$ tail -n 100 /var/log/httpsd/access_log
+```
+
+**33) How do you combine two lines from two sorted files in Linux ?**
+
+* Use this command: 
+```
+comm file1 file2.
+```
+
+**34) What is the core of Linux Operating System ?**
+
+* Kernel is the core of Linux Operating System.
+* Shell is a command Line Interpreter.
+* Command is user Instruction to Computer.
+* Script is collection of commands stored in a file 
+* Terminal is a command Line Interface.
+
+**35) What is **df -h** command ?**
+
+* This command show free space on mounted file systems.
