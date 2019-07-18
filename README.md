@@ -109,8 +109,77 @@ to find current memory usage
 * Specifically, locally-installed files go to /usr/local/bin, /usr/local/lib, etc.). Another application of this directory is that it is used for software packages installed from source, or software not officially shipped with the distribution.
 
 
-**43) How do you terminate an ongoing process?**
+**19) How do you terminate an ongoing process?**
 
 * Every process in the system is identified by a unique process id or pid.
 * Use the kill command followed by the pid to terminate that process.
 * To terminate all process at once, use kill 0.
+
+**20) Write a command that will look for files with an extension "c", and has the occurrence of the string "apple" in it.**
+
+``` Find ./ -name "*.c" | xargs grep –i "apple"
+```
+
+**21) Write a command that will display all .txt files, including its individual permission.**
+
+```ls -al *.txt
+```
+
+**22) Write a command that will do the following:**
+
+-look for all files in the current and subsequent directories with an extension c,v
+-strip the,v from the result (you can use sed command)
+-use the result and use a grep command to search for all occurrences of the word ORANGE in the files.
+
+```Find ./ -name "*.c,v" | sed 's/,v//g' | xargs grep "ORANGE"
+```
+
+**23) What is the command to calculate the size of a folder?**
+
+* To calculate the size of a folder uses the command **du –sh folder1.**
+
+**24) How can you find the status of a process?**
+
+* Use the command
+
+```ps ux
+```
+**25) How can you check the memory status?**
+
+You can use the command
+
+* **free -m** to display output in MB
+
+* **free -g** to display output in GB
+
+**26) How can you append one file to another in Linux?**
+
+* To append one file to another in Linux you can use command **cat file2 >> file 1.** 
+* The operator >> appends the output of the named file or creates the file if it is not created.
+* While another command **cat file 1 file 2 > file 3** appends two or more files to one.
+
+**27) Explain how you can find a file using Terminal?**
+
+* To find a file you have to use a command, 
+```find . –name "process.txt" .
+```
+ It will look for the current directory for a file called process.txt.
+
+**28) Explain how you can create a folder using Terminal?**
+
+* To create a folder, you have to use command **mkdir.** It will be something like these: ~$ mkdir Guru99
+
+**29) Explain how you can view the text file using Terminal?**
+
+* To view the text file, go to the specific folder where the text files are located by using the command cd and then type less filename.txt.
+
+```less filename.txt
+```
+
+**30) Explain how to enable root logging in Ubuntu?**
+
+* The command which enables root logging is
+
+```
+#sudo sh-c 'echo "greater-show-manual-login=true" >>/etc/lightdm/lightdm.conf'
+```
