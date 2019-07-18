@@ -224,3 +224,41 @@ comm file1 file2.
 **35) What is **df -h** command ?**
 
 * This command show free space on mounted file systems.
+
+**36) What is the difference between locate and slocate command ?**
+
+* The slocate looks for the **files that user have access**. 
+* whereas locate will search for the **file with updated result**.
+
+**37) How to create a new file and modify an existing file in vi editor ?**
+
+* Find below the commands with the description
+
+**vi filename**: This is the command used to create a new file as well as modify an existing file.
+**View filename**: This command opens an existing file in read-only mode.
+**X**: This command deletes the character which is under the cursor or before the cursor location.
+**dd**: This command is used to delete the current line.
+
+**38) Why we use LINUX ?**
+
+* LINUX is used widely because it is completely different from other operating systems where every aspect comes with something extra i.e. some additional features. Some of the major reasons to use LINUX are listed below
+
+* It is an open source operating system where programmers get the advantage of designing their own custom OS
+
+* Software and the server licensing required to install Linux is completely free and can be installed on many computers as required
+* It has low or minimum but controllable issues with viruses, malware, etc
+* It is highly secured and supports multiple file systems.
+
+**39) Advantages of CLI**
+
+Very flexible
+Can easily access commands
+Much faster and easier to use by expert
+Does not use much CPU processing time.
+
+**40) Disadvantages of CLI**
+
+Learning and remembering type commands is hard.
+Have to be typed precisely.
+Can be very confusing.
+Surfing web, graphics, etc are few tasks which are hard or impossible to do on the command line.
