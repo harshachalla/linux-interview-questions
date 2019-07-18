@@ -117,12 +117,14 @@ to find current memory usage
 
 **20) Write a command that will look for files with an extension "c", and has the occurrence of the string "apple" in it.**
 
-``` Find ./ -name "*.c" | xargs grep –i "apple"
+```
+ Find ./ -name "*.c" | xargs grep –i "apple"
 ```
 
 **21) Write a command that will display all .txt files, including its individual permission.**
 
-```ls -al *.txt
+```
+ls -al *.txt
 ```
 
 **22) Write a command that will do the following:**
@@ -131,7 +133,8 @@ to find current memory usage
 -strip the,v from the result (you can use sed command)
 -use the result and use a grep command to search for all occurrences of the word ORANGE in the files.
 
-```Find ./ -name "*.c,v" | sed 's/,v//g' | xargs grep "ORANGE"
+```
+Find ./ -name "*.c,v" | sed 's/,v//g' | xargs grep "ORANGE"
 ```
 
 **23) What is the command to calculate the size of a folder?**
@@ -142,7 +145,8 @@ to find current memory usage
 
 * Use the command
 
-```ps ux
+```
+ps ux
 ```
 **25) How can you check the memory status?**
 
@@ -161,7 +165,8 @@ You can use the command
 **27) Explain how you can find a file using Terminal?**
 
 * To find a file you have to use a command, 
-```find . –name "process.txt" .
+```
+find . –name "process.txt" .
 ```
  It will look for the current directory for a file called process.txt.
 
@@ -173,7 +178,8 @@ You can use the command
 
 * To view the text file, go to the specific folder where the text files are located by using the command cd and then type less filename.txt.
 
-```less filename.txt
+```
+less filename.txt
 ```
 
 **30) Explain how to enable root logging in Ubuntu?**
